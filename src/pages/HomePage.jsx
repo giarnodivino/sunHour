@@ -70,16 +70,16 @@ function HomePage() {
 
               <div className="grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200">
-                  <p className="text-3xl font-extrabold text-slate-900">xxx</p>
+                  <p className="text-3xl font-extrabold text-slate-900">146+</p>
                   <p className="mt-2 text-sm text-slate-500">Successful Installations</p>
                 </div>
                 <div className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200">
-                  <p className="text-3xl font-extrabold text-slate-900">xxxMWp+</p>
+                  <p className="text-3xl font-extrabold text-slate-900">2.34MWp+</p>
                   <p className="mt-2 text-sm text-slate-500">Solar Capacity Delivered</p>
                 </div>
                 <div className="rounded-3xl bg-white p-6 shadow-sm shadow-slate-200">
-                  <p className="text-3xl font-extrabold text-slate-900">xxxGWh+</p>
-                  <p className="mt-2 text-sm text-slate-500">Electricity Generated</p>
+                  <p className="text-3xl font-extrabold text-slate-900">2.99GWh+</p>
+                  <p className="mt-2 text-sm text-slate-500">Electricity Generated per Year</p>
                 </div>
               </div>
 
