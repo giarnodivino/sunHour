@@ -70,8 +70,7 @@ function AboutPage() {
                 Powering the Philippines, One Roof at a Time
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg">
-                Sunhour Solar PH exists to make clean, reliable, and affordable solar energy accessible to Filipino
-                homes and businesses — from busy Metro Manila rooftops to communities on the country’s furthest islands.
+                Sunhour Energy Inc. started with a dream of providing light powered simply by the sun.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -91,11 +90,11 @@ function AboutPage() {
             </div>
 
             <div className="rounded-3xl border border-white/15 bg-white/5 p-6 backdrop-blur-sm">
-              <p className="text-sm font-medium uppercase tracking-[0.28em] text-emerald-200">Founded in 2014</p>
-              <p className="mt-4 text-3xl font-black text-white">A small solar idea</p>
+              <p className="text-sm font-medium uppercase tracking-[0.28em] text-emerald-200">Founded in 2013</p>
+              <p className="mt-4 text-3xl font-black text-white">A dream powered by the sun</p>
               <p className="mt-4 text-base leading-7 text-slate-200">
-                What began with a single 50-watt panel, two small batteries, and a charge controller grew into a company
-                committed to practical, dependable solar for every Filipino household and business.
+                It began with a simple belief: solar energy should be practical, reliable, and accessible to more
+                Filipinos.
               </p>
             </div>
           </div>
@@ -106,21 +105,28 @@ function AboutPage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700">Our Story</p>
               <h2 className="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">
-                Built from a simple test that sparked a bigger mission
+                From a simple belief to a brighter future
               </h2>
 
               <div className="mt-8 space-y-6 text-base leading-8 text-slate-600 sm:text-lg">
                 <p>
-                  In 2014, our founder Gregory “Gerry” Divino brought a small solar setup on a family trip to a resort
-                  in Los Baños, Laguna to test a system he was building for a client who needed to power lights and a
-                  fan for a small school on a remote island in Batanes. Watching a phone charge and a light bulb glow
-                  purely off sunlight sparked something bigger: a belief that solar could — and should — reach every
-                  corner of the Philippines, not just the well-resourced ones.
+                  That dream began in 2013, when founder Gerry Divino entered the Philippine solar industry with a
+                  simple belief: solar energy should be practical, reliable, and accessible to more Filipinos.
                 </p>
                 <p>
-                  That small test system has since grown into a company dedicated to designing and installing solar and
-                  solar and storage solutions that help Filipino households and businesses lower their electricity costs
-                  and reduce their environmental footprint.
+                  Since then, Gerry has been involved in the design, provisioning, installation, and integration of
+                  solar energy systems for homes and businesses across the Philippines. His experience spans both
+                  grid-connected and stand-alone systems, as well as the growing use of battery storage to provide
+                  greater energy independence and resilience.
+                </p>
+                <p>
+                  Today, Sunhour Energy brings together that experience with a practical, engineering-driven approach
+                  to renewable energy. We design solar and battery systems around how our customers actually use
+                  electricity—helping them lower energy costs, improve reliability, and make better use of clean energy.
+                </p>
+                <p>
+                  Now it provides power from the sun to homes, businesses and establishments where conventional power
+                  from the grid is limited, beyond reach, or too expensive.
                 </p>
               </div>
             </div>
@@ -130,7 +136,7 @@ function AboutPage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-700">Impact</p>
                 <div className="mt-5 space-y-4">
                   <div>
-                    <p className="text-3xl font-black text-slate-900">2014</p>
+                    <p className="text-3xl font-black text-slate-900">2013</p>
                     <p className="text-sm text-slate-500">Year the journey began</p>
                   </div>
                   <div>
@@ -159,13 +165,12 @@ function AboutPage() {
 
                 <div className="mt-6 space-y-5 text-base leading-8 text-slate-600 sm:text-lg">
                   <p>
-                    Gerry has spent over a decade in the Philippine solar industry, involved in the provisioning,
-                    installation, and integration of solar energy into homes, businesses, and off-grid communities.
+                    Gerry has been involved in the design, provisioning, installation, and integration of solar energy
+                    systems for homes and businesses across the Philippines since 2013.
                   </p>
                   <p>
-                    He holds a degree from the University of Wollongong, Australia, and is a regular speaker at solar
-                    industry events across the Philippines, sharing insights on how individuals and businesses can lower
-                    their electric bills through solar and battery storage solutions.
+                    His experience covers grid-connected and stand-alone systems, including battery storage solutions
+                    that give customers greater energy independence and resilience.
                   </p>
                 </div>
               </div>
