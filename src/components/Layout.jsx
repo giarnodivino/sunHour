@@ -7,6 +7,7 @@ function Layout() {
   const navItems = [
     { type: "route", to: "/", label: "Home", end: true },
     { type: "route", to: "/about", label: "About" },
+    { type: "anchor", to: "/#solar-estimator", label: "Calculator" },
     { type: "anchor", to: "#contact", label: "Contact" },
   ];
 

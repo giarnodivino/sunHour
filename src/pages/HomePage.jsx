@@ -2,6 +2,8 @@ import MainPicture from "../assets/sunhour-homepage.jpg";
 import ProjectCard from "../components/ProjectCard";
 import ContactSection from "../components/ContactSection";
 import { farm1, farm2, farm3, solarchurch, bulacanhatchery, farm4 } from "../assets/images";
+import SpecularButton from "../components/SpecularButton";
+import SolarEstimator from "../components/SolarEstimator";
 
 function HomePage() {
   const featuredProjects = [
@@ -33,23 +35,64 @@ function HomePage() {
 
         <div className="relative z-10 w-full max-w-5xl px-4 py-24 text-center text-white sm:px-6 lg:px-8">
           <h1 className="mb-6 text-5xl font-black leading-[0.9] tracking-[-0.04em] drop-shadow-lg sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem]">
-            SUNHOUR
+            <span className="text-orange-400">SUN</span>HOUR
           </h1>
-          <p className="mx-auto mb-8 max-w-2xl text-base font-light leading-8 text-slate-100/95 sm:text-lg sm:leading-8 lg:mb-12">
-            Helping people and businesses become energy efficient and sufficient through our smart solar and storage
+          <p className="mx-auto max-w-2xl text-lg font-light leading-8 p-8 text-slate-100/95 lg:mb-12">
+            Helping people and businesses become energy efficient and sufficient through smart solar and storage
             solutions
           </p>
+          <div className="flex gap-4 justify-center">
+            <a href="#contact">
+              <SpecularButton
+                size="md"
+                radius={9}
+                tint="#ffffff"
+                tintOpacity={0}
+                blur={0}
+                textColor="#f5f5f5"
+                lineColor="#F97316"
+                baseColor="#525252"
+                intensity={1}
+                shineSize={10}
+                shineFade={40}
+                thickness={1.3}
+                speed={0.35}
+                followMouse
+                proximity={250}
+                autoAnimate={false}
+                onClick={() => console.log("clicked")}
+              >
+                GET A FREE QUOTE
+              </SpecularButton>
+            </a>
+            <a href="#solar-estimator">
+              <SpecularButton
+                size="md"
+                radius={9}
+                tint="#ffffff"
+                tintOpacity={0}
+                blur={0}
+                textColor="#f5f5f5"
+                lineColor="#F97316"
+                baseColor="#525252"
+                intensity={1}
+                shineSize={10}
+                shineFade={40}
+                thickness={1.3}
+                speed={0.35}
+                followMouse
+                proximity={250}
+                autoAnimate={false}
+                onClick={() => console.log("clicked")}
+              >
+                Get Started
+              </SpecularButton>
+            </a>
+          </div>
         </div>
-
-        <nav className="absolute left-4 top-1/2 z-20 hidden -translate-y-1/2 flex-col gap-6 text-sm sm:left-6 md:flex">
-          <a href="#about" className="font-medium text-white drop-shadow transition hover:opacity-70">
-            About
-          </a>
-          <a href="#contact" className="font-medium text-white drop-shadow transition hover:opacity-70">
-            Contact
-          </a>
-        </nav>
       </section>
+
+      <SolarEstimator />
 
       <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
@@ -94,7 +137,6 @@ function HomePage() {
             </div>
 
             <div className="relative">
-              <div className="absolute -right-10 top-10 h-44 w-44 rounded-4xl border-4 border-white bg-emerald-100 shadow-xl shadow-emerald-200/40"></div>
               <div className="relative mx-auto grid max-w-lg gap-6">
                 <div className="overflow-hidden rounded-4xl border-4 border-white shadow-xl shadow-slate-200">
                   <img src={farm1} alt="Solar installation" className="h-72 w-full object-cover" />
