@@ -1,4 +1,4 @@
-import MainPicture from "../assets/sunhour-homepage.jpg";
+import MainPicture from "../assets/sunhour-homepage.jpeg";
 import ProjectCard from "../components/ProjectCard";
 import ContactSection from "../components/ContactSection";
 import { farm1, farm2, farm3, solarchurch, bulacanhatchery, farm4 } from "../assets/images";
