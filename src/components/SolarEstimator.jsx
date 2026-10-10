@@ -195,12 +195,6 @@ function SolarEstimator() {
             >
               Get an accurate quote <ArrowRight className="h-4 w-4" />
             </a>
-            {system === "hybrid" && Number(bill) >= HYBRID_MIN_BILL && (
-              <p className="relative mt-4 text-xs leading-5 text-emerald-100/70">
-                For bills of ₱8,000 or more, this estimate includes the 3.5 kWp minimum reference size for a hybrid
-                system with battery.
-              </p>
-            )}
             {Number(bill) > 0 && Number(bill) < 5000 && (
               <p className="relative mt-4 flex gap-2 text-xs leading-5 text-orange-200">
                 <Info className="mt-0.5 h-4 w-4 shrink-0" />
