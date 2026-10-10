@@ -3,6 +3,8 @@ import { ArrowRight, BatteryCharging, Info, Sun, Zap } from "lucide-react";
 
 const PANEL_KW = 0.65;
 const SUN_HOURS = 3.5;
+const HYBRID_MIN_CAPACITY = 3.5;
+const HYBRID_MIN_BILL = 8000;
 
 const pricePerKw = {
   grid: [
@@ -48,7 +50,11 @@ function SolarEstimator() {
     const monthlyUse = monthlyBill / electricityRate;
     const dailyUse = monthlyUse / 30.5;
     const targetDailyUse = system === "grid" ? dailyUse * 0.3 : dailyUse * 0.5;
-    const proposedCapacity = Math.ceil((targetDailyUse / SUN_HOURS) * 10) / 10;
+    const calculatedCapacity = Math.ceil((targetDailyUse / SUN_HOURS) * 10) / 10;
+    const proposedCapacity =
+      system === "hybrid" && monthlyBill >= HYBRID_MIN_BILL
+        ? Math.max(calculatedCapacity, HYBRID_MIN_CAPACITY)
+        : calculatedCapacity;
     const panels = Math.ceil(proposedCapacity / PANEL_KW);
     const actualCapacity = panels * PANEL_KW;
     const annualProduction = actualCapacity * SUN_HOURS * 365;
@@ -189,6 +195,12 @@ function SolarEstimator() {
             >
               Get an accurate quote <ArrowRight className="h-4 w-4" />
             </a>
+            {system === "hybrid" && Number(bill) >= HYBRID_MIN_BILL && (
+              <p className="relative mt-4 text-xs leading-5 text-emerald-100/70">
+                For bills of ₱8,000 or more, this estimate includes the 3.5 kWp minimum reference size for a hybrid
+                system with battery.
+              </p>
+            )}
             {Number(bill) > 0 && Number(bill) < 5000 && (
               <p className="relative mt-4 flex gap-2 text-xs leading-5 text-orange-200">
                 <Info className="mt-0.5 h-4 w-4 shrink-0" />
