@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
-const ACCESS_KEY = "335b878808a04df889162ef244ef7a6e";
+const ACCESS_KEY = "320f6e9047f64063ba735fffa25992be";
 
 const initialFormData = {
   full_name: "",
