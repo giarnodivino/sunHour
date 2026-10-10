@@ -38,8 +38,7 @@ function HomePage() {
             <span className="text-orange-400">SUN</span>HOUR
           </h1>
           <p className="mx-auto max-w-2xl text-lg font-light leading-8 p-8 text-slate-100/95 lg:mb-12">
-            Helping people and businesses become energy efficient and sufficient through smart solar and storage
-            solutions
+            Optimizing every hour of the sun
           </p>
           <div className="flex gap-4 justify-center">
             <a href="#contact">
