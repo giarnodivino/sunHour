@@ -134,7 +134,7 @@ function SolarEstimator() {
                     {
                       value: "hybrid",
                       label: "Hybrid + battery",
-                      detail: "Backup power included",
+                      detail: "Can run solar at night",
                       Icon: BatteryCharging,
                     },
                   ].map(({ value, label, detail, Icon }) => (
@@ -193,7 +193,7 @@ function SolarEstimator() {
               href="#contact"
               className="relative mt-auto inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-5 py-4 text-sm font-bold text-white transition hover:bg-orange-600"
             >
-              Get an accurate quote <ArrowRight className="h-4 w-4" />
+              Get a more accurate quote for bigger savings and better ROI <ArrowRight className="h-4 w-4" />
             </a>
             {Number(bill) > 0 && Number(bill) < 5000 && (
               <p className="relative mt-4 flex gap-2 text-xs leading-5 text-orange-200">
