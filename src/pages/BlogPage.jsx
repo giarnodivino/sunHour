@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, BookOpen, Sun } from "lucide-react";
+import rooftopPhoto from "../assets/solar-rooftop-blog.jpeg";
 
 function BlogPage() {
   return (
@@ -15,12 +16,11 @@ function BlogPage() {
 
         <article className="mt-12 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
           <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="flex min-h-72 items-center justify-center bg-linear-to-br from-emerald-950 via-emerald-800 to-lime-600 p-10 text-white">
-              <div className="text-center">
-                <Sun className="mx-auto h-16 w-16 text-amber-300" strokeWidth={1.4} />
-                <p className="mt-5 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-100">A simple solar guide</p>
-                <p className="mt-2 text-5xl font-black tracking-tight">3 : 2</p>
-                <p className="mt-1 text-sm text-emerald-100">panels for every 200 kWh</p>
+            <div className="relative min-h-72 overflow-hidden bg-slate-200 lg:min-h-full">
+              <img src={rooftopPhoto} alt="Solar panels installed on a tiled residential roof" className="absolute inset-0 h-full w-full object-cover" />
+              <div className="absolute inset-0 bg-linear-to-t from-slate-950/60 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 flex items-center gap-2 rounded-full bg-slate-950/70 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm">
+                <Sun className="h-4 w-4 text-amber-300" /> A simple solar guide
               </div>
             </div>
             <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Check, Copy, Sun } from "lucide-react";
+import rooftopPhoto from "../assets/solar-rooftop-blog.jpeg";
 
 const title = "How many solar panels do you need to zero out your bill with solar?";
 const description = "Estimate how many solar panels you need from your monthly electricity use, and learn how batteries or net metering affect the system size.";
@@ -32,8 +33,10 @@ function SolarPanelsArticle() {
 
   return (
     <article className="bg-white">
-      <header id="top" className="bg-slate-950 px-4 pb-14 pt-10 text-white sm:px-6 sm:pb-20 lg:px-8">
-        <div className="mx-auto max-w-4xl">
+      <header id="top" className="relative overflow-hidden bg-slate-950 px-4 pb-14 pt-10 text-white sm:px-6 sm:pb-20 lg:px-8">
+        <img src={rooftopPhoto} alt="Solar panels installed on a tiled residential roof" className="absolute inset-0 h-full w-full object-cover opacity-30" />
+        <div className="absolute inset-0 bg-linear-to-r from-slate-950 via-slate-950/90 to-slate-950/55" />
+        <div className="relative mx-auto max-w-4xl">
           <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-medium text-emerald-200 transition hover:text-white"><ArrowLeft size={16} /> All articles</Link>
           <p className="mt-10 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">Solar basics · Sunhour Journal</p>
           <h1 className="mt-5 text-4xl font-black leading-tight tracking-[-0.035em] sm:text-5xl lg:text-6xl">{title}</h1>
